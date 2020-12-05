@@ -131,7 +131,7 @@ const drawchest = () =>{
 start(); */
 
 // const getTodo = () =>{
-fetch('https://my-json-server.typicode.com/typicode/demo/course/1')
+fetch('https://my-json-server.typicode.com/typicode/phat/demo/1')
   .then(response => response.json())
   .then(json => {
       const Id = json.id;
