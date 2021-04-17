@@ -1,0 +1,87 @@
+
+.Header{
+    // width: 100%;
+    // width: 100%;
+    // height: 56px;
+    // padding: 16px;
+    // box-sizing: border-box;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    &Left{
+        display: flex;
+        align-items: center;
+        &__menu{
+            border-radius: 50%;
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+            &:hover{
+                background-color: lightgray;
+            }
+        }
+        &__logo{
+            margin-left: 10px;
+            & img{
+                cursor: pointer;
+                width: 100px;
+                height: 55px;
+            }
+        }
+    }
+    &Center{
+        width: 100%;
+        height: 40px;
+        padding-top: 12px;
+        display: flex;
+        justify-content: center;
+        &__search{
+            display: flex;
+            align-items: center;
+            & input{
+                width: 576px;
+                height: 30px;
+                outline: none;
+                font-size: 18px;
+                padding: 6px;
+                border-radius: 3px;
+                border: solid 1px lightgray ;
+                border-right: none;
+            }
+            button{
+                height: 30px;
+                padding: 2px 20px;
+                background-color: white;
+                border: solid 1px lightgray ;
+                position: relative;
+                right: 1px;
+                cursor: pointer;
+                outline: none;
+            }
+        }
+    }
+    &Right{
+        margin-top: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        button{
+            margin-left: 10px;
+            width: 40px;
+            background-color: white;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            height: 40px;
+        }
+        button:last-child{
+            padding: 3px;
+            font-size: 19px;
+            color: white;
+            border-radius: 50%;
+            border: none;
+            background-color: lightgreen;
+            height: 40px;
+            width: 40px;
+        }
+    }
+}
